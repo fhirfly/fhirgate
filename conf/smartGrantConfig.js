@@ -1,0 +1,8 @@
+const SMART_SCOPES = 'system/Account.read system/AllergyIntolerance.read system/AllergyIntolerance.write system/Appointment.read system/Appointment.write system/Basic.write system/ChargeItem.read system/ChargeItem.write system/Binary.read system/CarePlan.read system/CareTeam.read system/Communication.read system/Communication.write system/Condition.read system/Condition.write system/Consent.read system/Contract.read system/Coverage.read system/Coverage.write system/DocumentReference.read system/DocumentReference.write system/Encounter.read system/Encounter.write system/FamilyMemberHistory.read system/FamilyMemberHistory.write system/Device.read system/DiagnosticReport.read system/Immunization.read system/Immunization.write system/Goal.read system/Location.read system/MedicationAdministration.read system/MedicationOrder.read system/MedicationRequest.read system/MedicationRequest.write system/MedicationStatement.read system/MedicationStatement.write system/NutritionOrder.read system/Observation.read system/Observation.write system/Organization.read system/Organization.write system/Patient.read system/Patient.write system/Person.read system/Practitioner.read system/Practitioner.write system/Procedure.read system/Procedure.write system/ProcedureRequest.read system/Provenance.read system/Provenance.write system/Questionnaire.read system/QuestionnaireResponse.read system/QuestionnaireResponse.write system/RelatedPerson.read system/RelatedPerson.write system/Schedule.read system/ServiceRequest.read system/Slot.read system/Slot.write'
+const SMART_CLIENT_GRANT_TYPE = 'client_credentials'
+
+smartGrantConfig = {
+    scope: SMART_SCOPES,
+    grant_type: SMART_CLIENT_GRANT_TYPE,
+}
+module.exports = smartGrantConfig 
